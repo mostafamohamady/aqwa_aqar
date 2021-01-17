@@ -1,0 +1,100 @@
+footer {
+  border-top: 3px solid $orange;
+  background-color: $blue;
+  color: $white;
+  .content {
+    padding-top: 60px;
+    .b-e:not(:last-of-type) {
+      border-inline-end: 4px solid $orange;
+    }
+
+    // .b-e {
+    //     position: relative;
+    //     &:not(:last-of-type) {
+    //       ::after {
+    //         content: "";
+    //         position: absolute;
+    //         top: 0;
+    //         bottom: 0;
+    //         right: 0;
+    //         width: 8px;
+    //         height: 100%;
+    //         background: $orange;
+    //         border-radius: 10px;
+    //       }
+    //     }
+    //   }
+    .list {
+      li a {
+        color: $white;
+        text-decoration: none;
+        transition: all 0.3s ease-in-out;
+        svg {
+          width: 20px;
+          height: 20px;
+          path {
+            transition: all 0.3s ease-in-out;
+          }
+        }
+
+        &:hover {
+          color: $orange;
+          svg path {
+            fill: $orange;
+            transition: all 0.3s ease-in-out;
+          }
+        }
+      }
+    }
+
+    .footer__social {
+      ul {
+        display: flex;
+
+        li {
+          margin-inline-end: 5px;
+          padding-inline-end: 5px;
+          &:not(:last-of-type) {
+            border-inline-end: 2px solid $orange;
+            transition: all 0.3s ease-in-out;
+          }
+
+          a {
+            transition: all 0.3s ease-in-out;
+            svg {
+              width: 32px;
+              height: 32px;
+              path {
+                transition: all 0.3s ease-in-out;
+              }
+            }
+
+            &:hover svg path {
+              fill: $orange;
+              transition: all 0.3s ease-in-out;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1400px) {
+  footer .footer div {
+    font-size: 1.3rem;
+  }
+  footer .footer div svg {
+    width: 60px;
+    height: 26px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  footer .footer {
+    flex-direction: column;
+    text-align: center;
+    div {
+      padding: 5px;
+    }
+  }
+}
