@@ -23,7 +23,7 @@ header {
             position: relative;
             padding-left: 10px;
             padding-right: 10px;
-            font-size: 14px;
+
             transition: all 0.3s ease-in-out;
             &:hover {
               color: #fff;
@@ -100,21 +100,26 @@ header {
       bottom: 0;
       left: 0;
       right: 0;
-      background-color: #3a99e264;
+      background-color: #0f245e85;
       z-index: 1;
     }
   }
+
+  .navbar--index {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-image: none !important;
+
+    .menu-line ,.over-lay {
+     display: none;
+    }
+   
+  }
 }
 
-@media screen and (min-width: 1400px) {
-  header .navbar--cutom .navbar-brand svg {
-    width: 150px;
-    height: 60px;
-  }
-  header .navbar--cutom .navbar-collapse .navbar-nav .nav-item .nav-link {
-    font-size: 1.8rem;
-  }
-}
+
 
 @media (min-width: 992px) {
   header .navbar--cutom .navbar-collapse .navbar-nav .nav-item {
