@@ -43,13 +43,15 @@ ol {
 .hover10 img {
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
 }
 
 .hover10:hover img {
   -webkit-transform: scale(1);
           transform: scale(1);
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
 }
 
 .page-wrapper {
@@ -368,6 +370,15 @@ header .navbar--index .menu-line, header .navbar--index .over-lay {
 .swiper-container--index .swiper-slide .slide {
   width: 100%;
   height: 100%;
+}
+
+.swiper-container--index .swiper-slide-active .slide {
+  -webkit-transition-delay: 2s;
+          transition-delay: 2s;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+  -webkit-transition: all 15s ease-in-out;
+  transition: all 15s ease-in-out;
 }
 
 .swiper-container--index .swiper-button-next,
