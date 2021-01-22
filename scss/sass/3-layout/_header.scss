@@ -112,14 +112,19 @@ header {
     left: 0;
     background-image: none !important;
 
-    .menu-line ,.over-lay {
-     display: none;
+    .menu-line,
+    .over-lay {
+      display: none;
     }
-   
+  }
+
+  .page-title {
+    h4 {
+      color: $white;
+      text-transform: uppercase;
+    }
   }
 }
-
-
 
 @media (min-width: 992px) {
   header .navbar--cutom .navbar-collapse .navbar-nav .nav-item {
