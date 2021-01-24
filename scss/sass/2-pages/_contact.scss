@@ -1,0 +1,28 @@
+.contact {
+  padding: 100px 0;
+
+  form {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 2px 0 $blue;
+    .form-group input[type="text"],
+    textarea {
+      border-radius: 10px;
+    }
+    .veriovication-code {
+      color: #ffbb00;
+      font-weight: bold;
+      border: 1px solid #eee;
+      padding: 2px 10px;
+      letter-spacing: 7px;
+    }
+    .btn-send {
+      background-color: $blue2;
+      color: #fff;
+      &:hover {
+        background-color: $blue;
+      }
+    }
+  }
+}

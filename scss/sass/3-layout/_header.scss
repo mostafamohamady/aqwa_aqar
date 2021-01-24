@@ -25,33 +25,12 @@ header {
             padding-right: 10px;
 
             transition: all 0.3s ease-in-out;
-            &:hover {
-              color: #fff;
-              &::before {
-                content: "";
-                border-bottom: 2px solid $orange;
-                position: absolute;
-                bottom: 1px;
-                left: 50%;
-                transform: translate(-50%);
-                width: 60%;
-                transition: all 0.7s ease-in-out;
-              }
-            }
+           
           }
 
           &.active {
             .nav-link {
               color: $orange;
-              &::before {
-                content: "";
-                border-bottom: 2px solid $orange;
-                position: absolute;
-                bottom: 1px;
-                left: 50%;
-                transform: translate(-50%);
-                width: 60%;
-              }
             }
           }
           .dropdown-menu {
@@ -127,6 +106,115 @@ header {
 }
 
 @media (min-width: 992px) {
+  header {
+    .navbar--cutom {
+      .navbar-collapse {
+        .navbar-nav {
+          .nav-item {
+            .nav-link {
+              &:hover {
+                color: #fff;
+                &::before {
+                  content: "";
+                  border-bottom: 2px solid $orange;
+                  position: absolute;
+                  bottom: 1px;
+                  left: 50%;
+                  transform: translate(-50%);
+                  width: 60%;
+                  transition: all 0.7s ease-in-out;
+                }
+              }
+            }
+
+            &.active {
+              .nav-link {
+                color: $orange;
+                &::before {
+                  content: "";
+                  border-bottom: 2px solid $orange;
+                  position: absolute;
+                  bottom: 1px;
+                  left: 50%;
+                  transform: translate(-50%);
+                  width: 60%;
+                }
+              }
+            }
+            .dropdown-menu {
+              background: #ffffff82;
+              a {
+                font-size: 0.7rem;
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                  color: $orange;
+                  padding-left: 19px;
+                  transition: all 0.3s ease-in-out;
+                }
+              }
+            }
+          }
+        }
+        .search-form {
+          .btn-lang {
+            margin-inline-start: 25px;
+            background-color: #fff;
+            padding: 1px 7px;
+            font-family: ae_AlMohanad;
+            font-size: 14px;
+            img {
+              width: 20px;
+              height: 16px;
+            }
+          }
+        }
+      }
+
+      .navbar-brand {
+        svg {
+          width: 126px;
+          height: 52px;
+        }
+      }
+      .menu-line {
+        border-top: 2px solid rgba(174, 174, 174, 0.816);
+        z-index: 2;
+      }
+      .over-lay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #0f245e85;
+        z-index: 1;
+      }
+    }
+
+    .navbar--index {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      background-image: none !important;
+
+      .menu-line,
+      .over-lay {
+        display: none;
+      }
+    }
+
+    .page-title {
+      position: relative;
+      z-index: 2;
+      h4 {
+        color: $white;
+        text-transform: uppercase;
+      }
+    }
+  }
+
   header .navbar--cutom .navbar-collapse .navbar-nav .nav-item {
     &:hover {
       .dropdown-menu {
@@ -143,26 +231,24 @@ header {
     }
     .navbar {
       .navbar-toggler {
-        border: 2px solid #fff;
         outline: none;
         border-radius: 0;
         .navbar-toggler-icon {
-          background-color: #fff;
+          background-color: $orange;
           display: block;
           height: 2px;
           &:not(:last-of-type) {
             margin-bottom: 0.3rem;
           }
         }
+
+        &.collapsed .navbar-toggler-icon {
+          background-color: #fff;
+        }
       }
       .navbar-collapse {
-        background-color: #3e206db3;
-        .navbar-nav .nav-item.active .nav-link::after {
-          width: 100% !important;
-        }
-        .navbar-nav .nav-item .nav-link:hover::after {
-          width: 100% !important;
-        }
+        background-color: #0f245ebd;
+      
         .navbar-nav .nav-item .nav-link {
           font-size: 12px;
         }
