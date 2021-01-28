@@ -1,6 +1,7 @@
 // swiper
 .swiper-container--index {
   border-bottom: 1px solid #ffc051;
+  max-height: 640px ;
   .swiper-container {
     width: 100%;
     height: 100%;
@@ -50,33 +51,32 @@
       top: 0;
       bottom: 0;
       z-index: 999;
-      background-color: #0f245e85;
+      background-color: #0f245e2e;
     }
 
     .slide {
       width: 100%;
       height: 100%;
-
     }
   }
-  .swiper-slide-active{
-    .slide{
-
+  .swiper-slide-active {
+    .slide {
       transition-delay: 2s;
       transform: scale(1.1, 1.1);
       transition: all 13s ease-in-out;
-      
     }
   }
 
   .swiper-button-next {
+    right: 50px;
   }
   .swiper-button-prev {
+    left: 50px;
   }
 
   .swiper-button-next,
   .swiper-button-prev {
-    top: 80%;
+    top: 50%;
 
     background-image: none;
 
@@ -135,30 +135,34 @@
   color: $white;
   .over-lay {
     padding: 105px 0;
-    background-color: #0f245e85;
+    background-color:#1e45b152;
   }
 
   h2 {
     margin-top: 10px;
   }
-  .book-an-appointment {
-    position: absolute;
-    bottom: -30px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: block;
-    background-color: $white;
-    padding: 10px 30px;
-    border-radius: 20px;
-    font-size: 1rem;
-    color: $gray2;
-    box-shadow: 0px 0px 1px 0px #f59c0c;
-    svg {
-      width: 30px;
-      margin-inline-start: 10px;
 
-      path {
-        fill: $orange;
+  .parallax__book {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -25px;
+    .book-an-appointment {
+      margin: 0 auto;
+      display: inline-block;
+      background-color: $white;
+      padding: 10px 30px;
+      border-radius: 20px;
+      font-size: 1rem;
+      color: $gray2;
+      box-shadow: 0px 0px 1px 0px #f59c0c;
+      svg {
+        width: 30px;
+        margin-inline-start: 10px;
+
+        path {
+          fill: $orange;
+        }
       }
     }
   }
@@ -197,7 +201,7 @@
         width: 100%;
         height: 100%;
         position: absolute;
-        background-color: #0f245e85;
+        // background-color: #1e45b152;
         z-index: 3;
         left: 0;
         right: 0;
@@ -217,18 +221,16 @@
 // e index
 
 @media (max-width: 991.98px) {
+  .swiper-container--index {
+    max-height: 640px !important;
+  }
   .swiper-container--index .swiper-slide .banner-content .content__text h5 {
     font-size: 1rem;
   }
   .swiper-container--index .swiper-slide .banner-content .content__text .start {
     font-size: 0.7rem;
   }
-  .swiper-container--index
-    .swiper-slide
-    .banner-content
-    .content__text
-    .start
-    svg {
+  .swiper-container--index .swiper-slide .banner-content .content__text .start svg {
     width: 12px;
   }
   .swiper-container--index .swiper-slide .banner-content .content__logo {
@@ -252,12 +254,7 @@
   .swiper-container--index .swiper-slide .banner-content .content__text .start {
     font-size: 0.5rem;
   }
-  .swiper-container--index
-    .swiper-slide
-    .banner-content
-    .content__text
-    .start
-    svg {
+  .swiper-container--index .swiper-slide .banner-content .content__text .start svg {
     width: 12px;
   }
   .swiper-container--index .swiper-slide .banner-content .content__logo svg {

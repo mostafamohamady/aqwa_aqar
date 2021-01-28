@@ -1,13 +1,6 @@
 header {
+  max-height: 700px;
   .navbar--cutom {
-    height: 140px;
-    display: block;
-    padding: 15px 0;
-    background-image: url("../imges/bg_menu.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-
     .container--custom {
       position: relative;
       z-index: 2;
@@ -25,7 +18,6 @@ header {
             padding-right: 10px;
 
             transition: all 0.3s ease-in-out;
-           
           }
 
           &.active {
@@ -79,7 +71,8 @@ header {
       bottom: 0;
       left: 0;
       right: 0;
-      background-color: #0f245e85;
+      background-color: #0f245e59;
+
       z-index: 1;
     }
   }
@@ -107,6 +100,16 @@ header {
 
 @media (min-width: 992px) {
   header {
+    .navbar--cutom {
+      height: 140px;
+      display: block;
+      padding: 15px 0;
+      background-image: url("../imges/bg_menu.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
+
     .navbar--cutom {
       .navbar-collapse {
         .navbar-nav {
@@ -142,10 +145,12 @@ header {
               }
             }
             .dropdown-menu {
-              background: #ffffff82;
+              background: #03030370;
+              border-bottom: 2px solid $orange;
               a {
                 font-size: 0.7rem;
                 transition: all 0.3s ease-in-out;
+                color: white;
 
                 &:hover {
                   color: $orange;
@@ -187,7 +192,7 @@ header {
         bottom: 0;
         left: 0;
         right: 0;
-        background-color: #0f245e85;
+        background-color:#0f245e59;
         z-index: 1;
       }
     }
@@ -197,7 +202,6 @@ header {
       top: 0;
       right: 0;
       left: 0;
-      background-image: none !important;
 
       .menu-line,
       .over-lay {
@@ -211,6 +215,27 @@ header {
       h4 {
         color: $white;
         text-transform: uppercase;
+      }
+    }
+
+    .sticky {
+      position: fixed;
+      z-index: 99999999999;
+      // background-image: url("../imges/bg_menu.png") !important;
+      height: 74px;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: #00000057;
+      border-bottom: 3px solid $orange;
+      background-image: none;
+
+      .page-title {
+        display: none;
+      }
+      .over-lay {
+        // background-color:rgba(0, 0, 0, 0.438);
+        display: none;
       }
     }
   }
@@ -248,7 +273,7 @@ header {
       }
       .navbar-collapse {
         background-color: #0f245ebd;
-      
+
         .navbar-nav .nav-item .nav-link {
           font-size: 12px;
         }
@@ -277,5 +302,5 @@ header {
   }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
 }

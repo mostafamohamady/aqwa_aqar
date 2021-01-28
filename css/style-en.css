@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: "advertisingbold", Arial, Helvetica, sans-serif, "ae_AlMohanad";
+  font-family: Arial, Helvetica, sans-serif, "ae_AlMohanad";
   background-color: #f9f9f9;
   font-size: 17px;
 }
@@ -171,14 +171,8 @@ ol {
   color: #ffffff;
 }
 
-header .navbar--cutom {
-  height: 140px;
-  display: block;
-  padding: 15px 0;
-  background-image: url("../imges/bg_menu.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+header {
+  max-height: 700px;
 }
 
 header .navbar--cutom .container--custom {
@@ -256,7 +250,7 @@ header .navbar--cutom .over-lay {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #0f245e85;
+  background-color: #0f245e59;
   z-index: 1;
 }
 
@@ -279,6 +273,15 @@ header .page-title h4 {
 }
 
 @media (min-width: 992px) {
+  header .navbar--cutom {
+    height: 140px;
+    display: block;
+    padding: 15px 0;
+    background-image: url("../imges/bg_menu.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
   header .navbar--cutom .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
     color: #fff;
   }
@@ -308,12 +311,14 @@ header .page-title h4 {
     width: 60%;
   }
   header .navbar--cutom .navbar-collapse .navbar-nav .nav-item .dropdown-menu {
-    background: #ffffff82;
+    background: #03030370;
+    border-bottom: 2px solid #F89F0A;
   }
   header .navbar--cutom .navbar-collapse .navbar-nav .nav-item .dropdown-menu a {
     font-size: 0.7rem;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+    color: white;
   }
   header .navbar--cutom .navbar-collapse .navbar-nav .nav-item .dropdown-menu a:hover {
     color: #F89F0A;
@@ -347,7 +352,7 @@ header .page-title h4 {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #0f245e85;
+    background-color: #0f245e59;
     z-index: 1;
   }
   header .navbar--index {
@@ -355,7 +360,6 @@ header .page-title h4 {
     top: 0;
     right: 0;
     left: 0;
-    background-image: none !important;
   }
   header .navbar--index .menu-line,
   header .navbar--index .over-lay {
@@ -368,6 +372,23 @@ header .page-title h4 {
   header .page-title h4 {
     color: #ffffff;
     text-transform: uppercase;
+  }
+  header .sticky {
+    position: fixed;
+    z-index: 99999999999;
+    height: 74px;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #00000057;
+    border-bottom: 3px solid #F89F0A;
+    background-image: none;
+  }
+  header .sticky .page-title {
+    display: none;
+  }
+  header .sticky .over-lay {
+    display: none;
   }
   header .navbar--cutom .navbar-collapse .navbar-nav .nav-item:hover .dropdown-menu {
     display: block;
@@ -425,6 +446,7 @@ header .page-title h4 {
 
 .swiper-container--index {
   border-bottom: 1px solid #ffc051;
+  max-height: 640px;
 }
 
 .swiper-container--index .swiper-container {
@@ -479,7 +501,7 @@ header .page-title h4 {
   top: 0;
   bottom: 0;
   z-index: 999;
-  background-color: #0f245e85;
+  background-color: #0f245e2e;
 }
 
 .swiper-container--index .swiper-slide .slide {
@@ -496,9 +518,17 @@ header .page-title h4 {
   transition: all 13s ease-in-out;
 }
 
+.swiper-container--index .swiper-button-next {
+  right: 50px;
+}
+
+.swiper-container--index .swiper-button-prev {
+  left: 50px;
+}
+
 .swiper-container--index .swiper-button-next,
 .swiper-container--index .swiper-button-prev {
-  top: 80%;
+  top: 50%;
   background-image: none;
 }
 
@@ -563,20 +593,23 @@ header .page-title h4 {
 
 .parallax-section .over-lay {
   padding: 105px 0;
-  background-color: #0f245e85;
+  background-color: #1e45b152;
 }
 
 .parallax-section h2 {
   margin-top: 10px;
 }
 
-.parallax-section .book-an-appointment {
+.parallax-section .parallax__book {
   position: absolute;
-  bottom: -30px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  display: block;
+  left: 0;
+  right: 0;
+  bottom: -25px;
+}
+
+.parallax-section .parallax__book .book-an-appointment {
+  margin: 0 auto;
+  display: inline-block;
   background-color: #ffffff;
   padding: 10px 30px;
   border-radius: 20px;
@@ -586,13 +619,13 @@ header .page-title h4 {
           box-shadow: 0px 0px 1px 0px #f59c0c;
 }
 
-.parallax-section .book-an-appointment svg {
+.parallax-section .parallax__book .book-an-appointment svg {
   width: 30px;
   -webkit-margin-start: 10px;
           margin-inline-start: 10px;
 }
 
-.parallax-section .book-an-appointment svg path {
+.parallax-section .parallax__book .book-an-appointment svg path {
   fill: #F89F0A;
 }
 
@@ -632,7 +665,6 @@ header .page-title h4 {
   width: 100%;
   height: 100%;
   position: absolute;
-  background-color: #0f245e85;
   z-index: 3;
   left: 0;
   right: 0;
@@ -649,18 +681,16 @@ header .page-title h4 {
 }
 
 @media (max-width: 991.98px) {
+  .swiper-container--index {
+    max-height: 640px !important;
+  }
   .swiper-container--index .swiper-slide .banner-content .content__text h5 {
     font-size: 1rem;
   }
   .swiper-container--index .swiper-slide .banner-content .content__text .start {
     font-size: 0.7rem;
   }
-  .swiper-container--index
-.swiper-slide
-.banner-content
-.content__text
-.start
-svg {
+  .swiper-container--index .swiper-slide .banner-content .content__text .start svg {
     width: 12px;
   }
   .swiper-container--index .swiper-slide .banner-content .content__logo {
@@ -684,12 +714,7 @@ svg {
   .swiper-container--index .swiper-slide .banner-content .content__text .start {
     font-size: 0.5rem;
   }
-  .swiper-container--index
-.swiper-slide
-.banner-content
-.content__text
-.start
-svg {
+  .swiper-container--index .swiper-slide .banner-content .content__text .start svg {
     width: 12px;
   }
   .swiper-container--index .swiper-slide .banner-content .content__logo svg {
@@ -891,7 +916,8 @@ svg {
 }
 
 .contact form {
-  background-color: #fff;
+  background-color: #0F245E;
+  color: #ffffff;
   padding: 15px;
   border-radius: 10px;
   -webkit-box-shadow: 0 0 2px 0 #0F245E;
@@ -1029,6 +1055,18 @@ footer .content .footer__social ul li a:hover svg path {
 @media (max-width: 991px) {
   header .navbar--cutom {
     padding: 0.5rem 1rem;
+  }
+  body {
+    font-size: 14px;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+  h3 {
+    font-size: 1.3rem;
+  }
+  h4 {
+    font-size: 1.2rem;
   }
 }
 
