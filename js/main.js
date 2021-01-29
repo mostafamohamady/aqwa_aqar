@@ -1,25 +1,22 @@
 /* ********** Stiky Navbar ********* */
 
-// window.addEventListener("resize", function (event) {
-//   if (window.innerWidth > 992) {
-//     console.log("SASSSSSSS");
-//   }
-// });
-
 var stickyNav = (function () {
   window.onscroll = function () {
     myFunction();
   };
   // Get the navbar
   var navbar = document.getElementById("navigation");
+  body = document.getElementsByTagName("body")[0];
   // Get the offset position of the navbar
   var sticky = 100;
   // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
   function myFunction() {
     if (window.pageYOffset >= sticky) {
+      body.classList.add("p100");
       navbar.classList.add("sticky");
     } else {
       navbar.classList.remove("sticky");
+      body.classList.remove("p100");
     }
   }
 })();

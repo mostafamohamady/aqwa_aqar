@@ -381,7 +381,7 @@ header .page-title h4 {
     left: 0;
     right: 0;
     background-color: #00000057;
-    border-bottom: 3px solid #F89F0A;
+    border-bottom: 2px solid #F89F0A;
     background-image: none;
   }
   header .sticky .page-title {
@@ -678,67 +678,6 @@ header .page-title h4 {
   background-color: #0f245e00;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-}
-
-@media (max-width: 991.98px) {
-  .swiper-container--index {
-    max-height: 640px !important;
-  }
-  .swiper-container--index .swiper-slide .banner-content .content__text h5 {
-    font-size: 1rem;
-  }
-  .swiper-container--index .swiper-slide .banner-content .content__text .start {
-    font-size: 0.7rem;
-  }
-  .swiper-container--index .swiper-slide .banner-content .content__text .start svg {
-    width: 12px;
-  }
-  .swiper-container--index .swiper-slide .banner-content .content__logo {
-    text-align: center;
-  }
-  .swiper-container--index .swiper-slide .banner-content .content__logo svg {
-    width: 65%;
-  }
-}
-
-@media (max-width: 767.98px) {
-  .swiper-container--index {
-    height: 300px;
-  }
-  .swiper-container--index .swiper-slide .banner-content .content__text h2 {
-    font-size: 0.7rem;
-  }
-  .swiper-container--index .swiper-slide .banner-content .content__text h5 {
-    font-size: 0.6rem;
-  }
-  .swiper-container--index .swiper-slide .banner-content .content__text .start {
-    font-size: 0.5rem;
-  }
-  .swiper-container--index .swiper-slide .banner-content .content__text .start svg {
-    width: 12px;
-  }
-  .swiper-container--index .swiper-slide .banner-content .content__logo svg {
-    width: 65%;
-  }
-  .swiper-container--index .banner-service .service__list {
-    display: none;
-  }
-  .swiper-container--index .social-icons .social-icons__list li a {
-    padding: 3px;
-  }
-  .swiper-container--index .social-icons .social-icons__list li a svg {
-    width: 15px;
-    height: 15px;
-  }
-  .index .first-sec .sec__box .icon svg {
-    max-width: 80px;
-  }
-  .index .first-sec .sec__box .box__content h4 {
-    font-size: 1rem;
-  }
-  .index .first-sec .sec__box .box__content p {
-    font-size: 0.7rem;
-  }
 }
 
 .about-us {
@@ -1052,6 +991,12 @@ footer .content .footer__social ul li a:hover svg path {
   }
 }
 
+@media (min-width: 992px) {
+  .p100 {
+    padding-top: 100px;
+  }
+}
+
 @media (max-width: 991px) {
   header .navbar--cutom {
     padding: 0.5rem 1rem;
@@ -1067,6 +1012,86 @@ footer .content .footer__social ul li a:hover svg path {
   }
   h4 {
     font-size: 1.2rem;
+  }
+  header .page-title h4 {
+    color: #264290;
+    margin: 0;
+    padding: 5px 0;
+  }
+  .swiper-container--index {
+    max-height: 640px !important;
+  }
+  .swiper-container--index .swiper-slide .banner-content .content__text h5 {
+    font-size: 1rem;
+  }
+  .swiper-container--index .swiper-slide .banner-content .content__text .start {
+    font-size: 0.7rem;
+  }
+  .swiper-container--index
+.swiper-slide
+.banner-content
+.content__text
+.start
+svg {
+    width: 12px;
+  }
+  .swiper-container--index .swiper-slide .banner-content .content__logo {
+    text-align: center;
+  }
+  .swiper-container--index .swiper-slide .banner-content .content__logo svg {
+    width: 65%;
+  }
+}
+
+@media (max-width: 768px) {
+  .swiper-container--index {
+    height: 300px;
+  }
+  .swiper-container--index .swiper-slide .banner-content .content__text h2 {
+    font-size: 0.7rem;
+  }
+  .swiper-container--index .swiper-slide .banner-content .content__text h5 {
+    font-size: 0.8rem;
+  }
+  .swiper-container--index .swiper-slide .banner-content .content__text .start {
+    font-size: 0.7rem;
+  }
+  .swiper-container--index
+.swiper-slide
+.banner-content
+.content__text
+.start
+svg {
+    width: 12px;
+  }
+  .swiper-container--index .swiper-slide .banner-content .content__logo svg {
+    width: 65%;
+  }
+  .swiper-container--index .banner-service .service__list {
+    display: none;
+  }
+  .swiper-container--index .social-icons .social-icons__list li a {
+    padding: 3px;
+  }
+  .swiper-container--index .social-icons .social-icons__list li a svg {
+    width: 15px;
+    height: 15px;
+  }
+  .swiper-container--index .swiper-button-next,
+  .swiper-container--index .swiper-button-prev {
+    display: none;
+  }
+  .welcome-section {
+    padding: 30px 0;
+  }
+  .welcome-section .welcome-content {
+    padding-top: 0px;
+  }
+  .our-specialization {
+    padding: 50px 0;
+  }
+  .our-specialization h2 {
+    padding-top: 20px;
   }
 }
 
