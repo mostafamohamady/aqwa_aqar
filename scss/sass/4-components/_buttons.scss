@@ -1,0 +1,14 @@
+.compare__btn-add{
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    background-color: $blue2;
+    color: $white;
+    width: 50px;
+    height: 50px;
+    &:hover{
+        color: $orange;
+        background-color: $blue;
+    }
+}
