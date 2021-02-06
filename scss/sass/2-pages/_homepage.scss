@@ -180,10 +180,16 @@
     margin: 20px 0;
   }
   .specialization__box {
-    svg {
-      width: 60px;
-      height: 60px;
+    margin-bottom: 10px;
+
+    span{
+      img{
+        max-width: 50px;
+        max-height: 50px;
+        border-radius: 10px;
+      }
     }
+    
   }
 }
 

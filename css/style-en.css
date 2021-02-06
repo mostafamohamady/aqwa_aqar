@@ -658,9 +658,14 @@ header .page-title h4 {
   margin: 20px 0;
 }
 
-.our-specialization .specialization__box svg {
-  width: 60px;
-  height: 60px;
+.our-specialization .specialization__box {
+  margin-bottom: 10px;
+}
+
+.our-specialization .specialization__box span img {
+  max-width: 50px;
+  max-height: 50px;
+  border-radius: 10px;
 }
 
 .recent-projects .projects__container {
