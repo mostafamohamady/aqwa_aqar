@@ -115,6 +115,22 @@ ol {
   background-color: #0F245E;
 }
 
+.see-more {
+  margin: 0 auto;
+  display: inline-block;
+  background-color: #ffffff;
+  padding: 7px 20px;
+  border-radius: 20px;
+  font-size: 1rem;
+  color: #818080;
+  -webkit-box-shadow: 0px 0px 1px 0px #f59c0c;
+          box-shadow: 0px 0px 1px 0px #f59c0c;
+}
+
+.see-more svg {
+  width: 20px;
+}
+
 .elementor-divider .elementor-divider-seprator {
   width: 70px;
   height: 5px;
