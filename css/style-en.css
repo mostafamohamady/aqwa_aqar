@@ -990,16 +990,17 @@ footer .content .footer__social ul li a {
 }
 
 footer .content .footer__social ul li a svg {
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
 }
 
 footer .content .footer__social ul li a svg path {
+  fill: #ffffff;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
-footer .content .footer__social ul li a:hover svg path {
+footer .content .footer__social ul li a:hover i {
   fill: #F89F0A;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
