@@ -1,0 +1,23 @@
+@import "style-en.scss";
+
+body {
+  direction: rtl;
+}
+
+.swiper-container--index .swiper-button-prev {
+  left: 50px;
+  right: auto;
+}
+.social-icons {
+  left: 0;
+  right: auto;
+  .social-icons__list li {
+    border-radius: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  .social-icons__list li a {
+    left: 0;
+    right: auto;
+  }
+}

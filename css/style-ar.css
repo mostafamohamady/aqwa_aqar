@@ -1133,4 +1133,29 @@ svg {
   }
 }
 
-/*# sourceMappingURL=style-en.css.map */
+body {
+  direction: rtl;
+}
+
+.swiper-container--index .swiper-button-prev {
+  left: 50px;
+  right: auto;
+}
+
+.social-icons {
+  left: 0;
+  right: auto;
+}
+
+.social-icons .social-icons__list li {
+  border-radius: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.social-icons .social-icons__list li a {
+  left: 0;
+  right: auto;
+}
+
+/*# sourceMappingURL=style-ar.css.map */
