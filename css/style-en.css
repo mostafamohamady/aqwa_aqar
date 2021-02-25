@@ -14,11 +14,19 @@ body {
   font-size: 17px;
 }
 
+body {
+  min-height: 100vh;
+}
+
 ul,
 ol {
   list-style: none;
   padding-left: 0;
   padding-right: 0;
+}
+
+.page-wrapper {
+  min-height: 80vh;
 }
 
 .hover01 img {
@@ -1031,7 +1039,7 @@ footer .content .footer__social ul li a:hover i {
 
 @media (min-width: 992px) {
   .p100 {
-    padding-top: 100px;
+    padding-top: 150px;
   }
 }
 

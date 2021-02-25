@@ -12,6 +12,9 @@ body {
   background-color: #f9f9f9;
   font-size: 17px;
 }
+body{
+  min-height: 100vh;
+}
 ul,
 ol {
   list-style: none;
@@ -20,7 +23,9 @@ ol {
 }
 
 
-
+.page-wrapper{
+  min-height: 80vh;
+}
 
 // img hover
 .hover01 img {
