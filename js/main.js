@@ -8,15 +8,15 @@ var stickyNav = (function () {
   var navbar = document.getElementById("navigation");
   body = document.getElementsByTagName("body")[0];
   // Get the offset position of the navbar
-  var sticky = 100;
+  var sticky =50;
   // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
   function myFunction() {
     if (window.pageYOffset >= sticky) {
-      body.classList.add("p100");
+      // body.classList.add("p100");
       navbar.classList.add("sticky");
     } else {
       navbar.classList.remove("sticky");
-      body.classList.remove("p100");
+      // body.classList.remove("p100");
     }
   }
 })();

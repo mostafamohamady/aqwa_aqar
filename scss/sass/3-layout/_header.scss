@@ -1,6 +1,7 @@
 header {
   max-height: 700px;
   .navbar--cutom {
+    position: fixed;
     .container--custom {
       position: relative;
       z-index: 2;
@@ -107,7 +108,11 @@ header {
       background-image: url("../imges/bg_menu.png");
       background-repeat: no-repeat;
       background-size: cover;
-      position: relative;
+      position: fixed;
+      top: 0;
+      left:0;
+      right: 0;
+      z-index: 99999;
     }
 
     .navbar--cutom {
@@ -219,6 +224,7 @@ header {
     }
 
     .sticky {
+      transition: position 0.3s ease-in-out;
       position: fixed;
       z-index: 99999999999;
       // background-image: url("../imges/bg_menu.png") !important;
@@ -229,7 +235,7 @@ header {
       background-color: #00000057;
       border-bottom: 2px solid $orange;
       background-image: none;
-
+     
       .page-title {
         display: none;
       }
