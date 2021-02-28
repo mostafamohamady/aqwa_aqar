@@ -566,15 +566,6 @@ header .page-title h4 {
   height: 100%;
 }
 
-.swiper-container--index .swiper-slide-active .slide {
-  -webkit-transition-delay: 2s;
-          transition-delay: 2s;
-  -webkit-transform: scale(1.1, 1.1);
-          transform: scale(1.1, 1.1);
-  -webkit-transition: all 13s ease-in-out;
-  transition: all 13s ease-in-out;
-}
-
 .swiper-container--index .swiper-button-next {
   right: 50px;
 }
