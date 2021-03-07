@@ -18,6 +18,11 @@
       z-index: 9999;
 
       .content__logo {
+        text-align: center;
+        img {
+          width: 200px;
+          height: 200px;
+        }
         svg {
           width: 100%;
           height: auto;
@@ -135,7 +140,7 @@
   color: $white;
   .over-lay {
     padding: 105px 0;
-    background-color:#1e45b152;
+    background-color: #1e45b152;
   }
 
   h2 {
@@ -182,14 +187,13 @@
   .specialization__box {
     margin-bottom: 10px;
 
-    span{
-      img{
+    span {
+      img {
         max-width: 50px;
         max-height: 50px;
         border-radius: 10px;
       }
     }
-    
   }
 }
 
@@ -225,5 +229,3 @@
 }
 
 // e index
-
-

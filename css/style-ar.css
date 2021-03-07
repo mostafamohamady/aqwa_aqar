@@ -231,6 +231,11 @@ header .navbar--cutom .container--custom {
   z-index: 2;
 }
 
+header .navbar--cutom .container--custom .navbar-brand .logo {
+  width: 70px;
+  height: 70px;
+}
+
 header .navbar--cutom .navbar-collapse {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
@@ -244,8 +249,8 @@ header .navbar--cutom .navbar-collapse .navbar-nav .nav-item {
 header .navbar--cutom .navbar-collapse .navbar-nav .nav-item .nav-link {
   color: #ffffff;
   position: relative;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -305,6 +310,33 @@ header .navbar--cutom .over-lay {
   z-index: 1;
 }
 
+header .logo--white {
+  width: 50px;
+  height: 50px;
+}
+
+header .navbar--index .logo--white {
+  display: none;
+  width: 50px;
+  height: 50px;
+}
+
+header .sticky.navbar--index .logo {
+  display: none !important;
+}
+
+header .sticky.navbar--index .logo--white {
+  display: block;
+  width: 50px !important;
+  height: 50px !important;
+}
+
+header .sticky .logo--white {
+  display: block;
+  width: 50px !important;
+  height: 50px !important;
+}
+
 header .navbar--index {
   position: absolute;
   top: 0;
@@ -327,7 +359,6 @@ header .page-title h4 {
   header .navbar--cutom {
     height: 140px;
     display: block;
-    padding: 15px 0;
     background-image: url("../imges/bg_menu.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -523,6 +554,15 @@ header .page-title h4 {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   z-index: 9999;
+}
+
+.swiper-container--index .swiper-slide .banner-content .content__logo {
+  text-align: center;
+}
+
+.swiper-container--index .swiper-slide .banner-content .content__logo img {
+  width: 200px;
+  height: 200px;
 }
 
 .swiper-container--index .swiper-slide .banner-content .content__logo svg {

@@ -2,9 +2,16 @@ header {
   max-height: 700px;
   .navbar--cutom {
     position: fixed;
+
     .container--custom {
       position: relative;
       z-index: 2;
+      .navbar-brand {
+        .logo {
+          width: 70px;
+          height: 70px;
+        }
+      }
     }
 
     .navbar-collapse {
@@ -15,8 +22,8 @@ header {
           .nav-link {
             color: $white;
             position: relative;
-            padding-left: 10px;
-            padding-right: 10px;
+            padding-left: 5px;
+            padding-right: 5px;
 
             transition: all 0.3s ease-in-out;
           }
@@ -77,6 +84,34 @@ header {
       z-index: 1;
     }
   }
+  .logo--white{
+   width: 50px;
+   height: 50px;
+  }
+  .navbar--index .logo--white {
+    display: none;
+    width: 50px;
+    height: 50px;
+  }
+
+  .sticky.navbar--index {
+    .logo {
+      display: none !important;
+    }
+    .logo--white {
+      display: block;
+      width: 50px !important;
+      height: 50px !important;
+    }
+  }
+  .sticky{
+   
+    .logo--white {
+      display: block;
+      width: 50px !important;
+      height: 50px !important;
+    }
+  }
 
   .navbar--index {
     position: absolute;
@@ -104,13 +139,13 @@ header {
     .navbar--cutom {
       height: 140px;
       display: block;
-      padding: 15px 0;
+      // padding: 15px 0;
       background-image: url("../imges/bg_menu.png");
       background-repeat: no-repeat;
       background-size: cover;
       position: fixed;
       top: 0;
-      left:0;
+      left: 0;
       right: 0;
       z-index: 99999;
     }
@@ -197,7 +232,7 @@ header {
         bottom: 0;
         left: 0;
         right: 0;
-        background-color:#0f245e59;
+        background-color: #0f245e59;
         z-index: 1;
       }
     }
@@ -235,7 +270,7 @@ header {
       background-color: #00000057;
       border-bottom: 2px solid $orange;
       background-image: none;
-     
+
       .page-title {
         display: none;
       }
