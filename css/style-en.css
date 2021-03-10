@@ -336,6 +336,10 @@ header .sticky .logo--white {
   height: 50px !important;
 }
 
+header .sticky .menu-line {
+  display: none;
+}
+
 header .navbar--index {
   position: absolute;
   top: 0;

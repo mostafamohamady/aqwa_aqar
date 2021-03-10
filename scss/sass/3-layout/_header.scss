@@ -84,9 +84,9 @@ header {
       z-index: 1;
     }
   }
-  .logo--white{
-   width: 50px;
-   height: 50px;
+  .logo--white {
+    width: 50px;
+    height: 50px;
   }
   .navbar--index .logo--white {
     display: none;
@@ -104,12 +104,14 @@ header {
       height: 50px !important;
     }
   }
-  .sticky{
-   
+  .sticky {
     .logo--white {
       display: block;
       width: 50px !important;
       height: 50px !important;
+    }
+    .menu-line {
+      display: none;
     }
   }
 
