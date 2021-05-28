@@ -8,14 +8,14 @@ header {
       z-index: 2;
       .navbar-brand {
         .logo {
-          width: 70px;
-          height: 70px;
+          width: 100px;
+          height: 100px;
         }
       }
     }
 
     .navbar-collapse {
-      justify-content: flex-end;
+      justify-content: space-between;
       .navbar-nav {
         .nav-item {
           position: relative;
@@ -72,6 +72,7 @@ header {
     .menu-line {
       border-top: 2px solid rgba(174, 174, 174, 0.816);
       z-index: 2;
+      display: none;
     }
     .over-lay {
       position: absolute;
@@ -139,7 +140,7 @@ header {
 @media (min-width: 992px) {
   header {
     .navbar--cutom {
-      height: 140px;
+      height: 74px;
       display: block;
       // padding: 15px 0;
       background-image: url("../imges/bg_menu.png");
@@ -254,6 +255,7 @@ header {
     .page-title {
       position: relative;
       z-index: 2;
+      display: none;
       h4 {
         color: $white;
         text-transform: uppercase;

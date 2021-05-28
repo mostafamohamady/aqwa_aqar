@@ -232,14 +232,14 @@ header .navbar--cutom .container--custom {
 }
 
 header .navbar--cutom .container--custom .navbar-brand .logo {
-  width: 70px;
-  height: 70px;
+  width: 100px;
+  height: 100px;
 }
 
 header .navbar--cutom .navbar-collapse {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 header .navbar--cutom .navbar-collapse .navbar-nav .nav-item {
@@ -298,6 +298,7 @@ header .navbar--cutom .navbar-brand svg {
 header .navbar--cutom .menu-line {
   border-top: 2px solid rgba(174, 174, 174, 0.816);
   z-index: 2;
+  display: none;
 }
 
 header .navbar--cutom .over-lay {
@@ -361,7 +362,7 @@ header .page-title h4 {
 
 @media (min-width: 992px) {
   header .navbar--cutom {
-    height: 140px;
+    height: 74px;
     display: block;
     background-image: url("../imges/bg_menu.png");
     background-repeat: no-repeat;
@@ -458,6 +459,7 @@ header .page-title h4 {
   header .page-title {
     position: relative;
     z-index: 2;
+    display: none;
   }
   header .page-title h4 {
     color: #ffffff;
@@ -1195,7 +1197,8 @@ svg {
 
 body {
   direction: rtl;
-  font-family: 'Markazi Text', serif;
+  font-family: "Markazi Text", serif;
+  font-size: 18px;
 }
 
 .swiper-container--index .swiper-button-prev {
@@ -1217,6 +1220,16 @@ body {
 .social-icons .social-icons__list li a {
   left: 0;
   right: auto;
+}
+
+.swiper-container-rtl .swiper-button-next {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.swiper-container-rtl .swiper-button-prev {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 /*# sourceMappingURL=style-ar.css.map */

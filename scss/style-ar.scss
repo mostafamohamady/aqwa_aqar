@@ -1,11 +1,11 @@
 @import "style-en.scss";
- 
-@import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap');
- 
+
+@import url("https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap");
 
 body {
   direction: rtl;
-  font-family: 'Markazi Text', serif;
+  font-family: "Markazi Text", serif;
+  font-size: 18px;
 }
 
 .swiper-container--index .swiper-button-prev {
@@ -24,4 +24,11 @@ body {
     left: 0;
     right: auto;
   }
+}
+
+.swiper-container-rtl .swiper-button-next {
+  transform: rotate(180deg);
+}
+.swiper-container-rtl .swiper-button-prev {
+  transform: rotate(180deg);
 }
