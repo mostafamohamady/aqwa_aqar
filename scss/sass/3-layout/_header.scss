@@ -6,10 +6,11 @@ header {
     .container--custom {
       position: relative;
       z-index: 2;
+    
       .navbar-brand {
         .logo {
-          width: 100px;
-          height: 100px;
+          width: 50px;
+          height: 50px;
         }
       }
     }
@@ -85,17 +86,24 @@ header {
       z-index: 1;
     }
   }
+
+  .navbar--cutom.navbar--index {
+    .logo {
+      width: 100px !important;
+      height: 100px !important;
+    }
+  }
   .logo--white {
     width: 50px;
     height: 50px;
   }
-  .navbar--index .logo--white {
+  .logo--white {
     display: none;
     width: 50px;
     height: 50px;
   }
 
-  .sticky.navbar--index {
+  .sticky {
     .logo {
       display: none !important;
     }
@@ -151,6 +159,21 @@ header {
       left: 0;
       right: 0;
       z-index: 99999;
+      
+     
+
+    
+    }
+    .navbar--cutom{
+      padding-left: 0;
+      padding-right: 0;
+      .container--custom{
+        padding: 0 13px;
+      }
+
+      .navbar-brand{
+        margin: 0 5px;
+      }
     }
 
     .navbar--cutom {
@@ -272,15 +295,15 @@ header {
       left: 0;
       right: 0;
       background-color: #00000057;
-      border-bottom: 2px solid $orange;
-      background-image: none;
+      // border-bottom: 2px solid $orange;
+      // background-image: none;
 
       .page-title {
         display: none;
       }
       .over-lay {
         // background-color:rgba(0, 0, 0, 0.438);
-        display: none;
+        // display: none;
       }
     }
   }
