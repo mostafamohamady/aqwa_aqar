@@ -63,4 +63,55 @@
       }
     }
   }
+
+  .table2 {
+    tr :not(:first-child ){
+    
+      width: 50%;
+      div{
+        width: 100%;
+      }
+      p{
+        width: 100%;
+      }
+      h4{
+        width: 100%;
+      }
+    }
+    
+  }
+
+  .table3 {
+    tr :not(:first-child ){
+    
+      width: 33.33%;
+      div{
+        width: 100%;
+      }
+      p{
+        width: 100%;
+      }
+      h4{
+        width: 100%;
+      }
+    }
+    
+  }
+
+  .table4 {
+    tr :not(:first-child ){
+    
+      width: 25%;
+      div{
+        width: 100%;
+      }
+      p{
+        width: 100%;
+      }
+      h4{
+        width: 100%;
+      }
+    }
+    
+  }
 }

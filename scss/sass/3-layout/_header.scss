@@ -7,12 +7,7 @@ header {
       position: relative;
       z-index: 2;
     
-      .navbar-brand {
-        .logo {
-          width: 50px;
-          height: 50px;
-        }
-      }
+    
     }
 
     .navbar-collapse {
@@ -109,20 +104,11 @@ header {
     }
     .logo--white {
       display: block;
-      width: 50px !important;
-      height: 50px !important;
+      width: 50px  ;
+      height: 50px  ;
     }
   }
-  .sticky {
-    .logo--white {
-      display: block;
-      width: 50px !important;
-      height: 50px !important;
-    }
-    .menu-line {
-      display: none;
-    }
-  }
+  
 
   .navbar--index {
     position: absolute;
@@ -148,7 +134,7 @@ header {
 @media (min-width: 992px) {
   header {
     .navbar--cutom {
-      height: 74px;
+      height: 120px;
       display: block;
       // padding: 15px 0;
       background-image: url("../imges/bg_menu.png");
@@ -170,9 +156,15 @@ header {
       .container--custom{
         padding: 0 13px;
       }
+      .logo {
+        width: 100px;
+        height: 100px;
+      }
 
       .navbar-brand{
+
         margin: 0 5px;
+        
       }
     }
 
@@ -319,6 +311,25 @@ header {
 
 @media (max-width: 991.98px) {
   header {
+
+    .navbar--cutom{
+      position: fixed;
+      left: 0;
+      right: 0;
+      z-index: 99999;
+      .logo {
+        width: 40px;
+        height: 40px;
+      }
+    
+      .page-title{
+        display: none;
+      }
+    }
+    .sticky .logo--white{
+      width: 40px;
+      height: 40px;
+    }
     .navbar--cutom .navbar-brand svg {
       width: 90px;
     }

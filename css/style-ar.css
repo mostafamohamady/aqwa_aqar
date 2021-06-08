@@ -231,11 +231,6 @@ header .navbar--cutom .container--custom {
   z-index: 2;
 }
 
-header .navbar--cutom .container--custom .navbar-brand .logo {
-  width: 50px;
-  height: 50px;
-}
-
 header .navbar--cutom .navbar-collapse {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -333,18 +328,8 @@ header .sticky .logo {
 
 header .sticky .logo--white {
   display: block;
-  width: 50px !important;
-  height: 50px !important;
-}
-
-header .sticky .logo--white {
-  display: block;
-  width: 50px !important;
-  height: 50px !important;
-}
-
-header .sticky .menu-line {
-  display: none;
+  width: 50px;
+  height: 50px;
 }
 
 header .navbar--index {
@@ -367,7 +352,7 @@ header .page-title h4 {
 
 @media (min-width: 992px) {
   header .navbar--cutom {
-    height: 74px;
+    height: 120px;
     display: block;
     background-image: url("../imges/bg_menu.png");
     background-repeat: no-repeat;
@@ -384,6 +369,10 @@ header .page-title h4 {
   }
   header .navbar--cutom .container--custom {
     padding: 0 13px;
+  }
+  header .navbar--cutom .logo {
+    width: 100px;
+    height: 100px;
   }
   header .navbar--cutom .navbar-brand {
     margin: 0 5px;
@@ -500,6 +489,23 @@ header .page-title h4 {
 }
 
 @media (max-width: 991.98px) {
+  header .navbar--cutom {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+  }
+  header .navbar--cutom .logo {
+    width: 40px;
+    height: 40px;
+  }
+  header .navbar--cutom .page-title {
+    display: none;
+  }
+  header .sticky .logo--white {
+    width: 40px;
+    height: 40px;
+  }
   header .navbar--cutom .navbar-brand svg {
     width: 90px;
   }
@@ -961,6 +967,54 @@ header .page-title h4 {
 
 .compare table tr td {
   border: 1px solid #c3c3c3;
+}
+
+.compare .table2 tr :not(:first-child) {
+  width: 50%;
+}
+
+.compare .table2 tr :not(:first-child) div {
+  width: 100%;
+}
+
+.compare .table2 tr :not(:first-child) p {
+  width: 100%;
+}
+
+.compare .table2 tr :not(:first-child) h4 {
+  width: 100%;
+}
+
+.compare .table3 tr :not(:first-child) {
+  width: 33.33%;
+}
+
+.compare .table3 tr :not(:first-child) div {
+  width: 100%;
+}
+
+.compare .table3 tr :not(:first-child) p {
+  width: 100%;
+}
+
+.compare .table3 tr :not(:first-child) h4 {
+  width: 100%;
+}
+
+.compare .table4 tr :not(:first-child) {
+  width: 25%;
+}
+
+.compare .table4 tr :not(:first-child) div {
+  width: 100%;
+}
+
+.compare .table4 tr :not(:first-child) p {
+  width: 100%;
+}
+
+.compare .table4 tr :not(:first-child) h4 {
+  width: 100%;
 }
 
 .contact {
