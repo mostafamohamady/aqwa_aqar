@@ -1020,6 +1020,15 @@ header .page-title h4 {
   .compare .compare__box .compare__media img {
     min-height: 60px;
   }
+  .compare table tr td {
+    font-size: 11px;
+  }
+  .compare table tr td i {
+    font-size: 10px;
+  }
+  .compare table tr td h4 {
+    font-size: 12px;
+  }
 }
 
 .contact {
